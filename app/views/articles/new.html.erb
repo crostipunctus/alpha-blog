@@ -1,0 +1,35 @@
+<h1>Create a new article</h1>
+
+<% if @article.errors.any? %>
+
+  <h2>The following errors occured: </h2>
+    <ul>
+      <% @article.errors.full_messages.each do |message| %>
+
+        <li><%= message %></li>
+
+      <% end %>
+    </ul>
+<% end %>
+
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+
+  <p>
+    <%= form.label :title %><br/>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :description %><br/>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+  
+
+<% end %>
+
+<%= link_to "Return to articles listing page", articles_path %>
