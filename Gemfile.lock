@@ -199,7 +199,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
-  bundle loc --add-platform x86_64-linux
+  bundle lock --add-platform x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
