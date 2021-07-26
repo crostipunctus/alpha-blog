@@ -10,7 +10,32 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require bootstrap
  *= require_tree .
  *= require_self
  */
+
+ .navbar {
+   background-color: black !important;
+ }
+
+ .nav-link {
+   color: white !important;
+ }
+
+ #logo {
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+   color: white;
+   font-size: large;
+ }
+
+ #home-container {
+   margin-top: 25px;
+ }
+
+ .jumbotron-image {
+  background-image: url('jumbo-copy.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ 
