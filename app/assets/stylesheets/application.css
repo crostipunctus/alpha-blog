@@ -46,6 +46,7 @@
  
  #page-content {
    flex: 1 0 auto;
+   background-color: lightgrey;
    
  }
  
@@ -53,10 +54,4 @@
    flex-shrink: none;
  }
  
- #full-body {
-   background-color: lightgrey;
- }
 
- a {
-   text-decoration: none;
- }
