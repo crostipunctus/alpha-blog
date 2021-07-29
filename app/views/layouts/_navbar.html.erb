@@ -10,20 +10,16 @@
           <%= link_to "Home", articles_path, class: "nav-link active" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Articles listing", articles_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
           <%=  link_to "About page", about_path, class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Articles
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
+            <%= link_to "All articles", articles_path, class: "dropdown-item" %>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
       </ul>

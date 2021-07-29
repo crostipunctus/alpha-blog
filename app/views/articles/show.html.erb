@@ -1,4 +1,4 @@
-<div id="page-content">
+
   <h1 class="text-center mt-4">Showing article</h1>
     <div class="container">
         <div class="row justify-content-md-center">
@@ -8,8 +8,9 @@
                 by Roshan Ali
               </div>
               <div class="card-body">
-                <h5 class="card-title text-success"><%=  @article.title %></h5>
-                <p class="card-text"><%= simple_format(@article.description) %></p>                <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info"%>
+                <h5 class="card-title text-left text-success"><%=  @article.title %></h5>
+                <div class="card-text"><%= simple_format(@article.description) %></div>                
+                <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info"%>
                 <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger", method: :delete,data: { Confirm: "Are you sure?"} %>
               </div>
               <div class="card-footer text-muted">
@@ -19,4 +20,3 @@
           </div>
         </div>
     </div>
-</div>
