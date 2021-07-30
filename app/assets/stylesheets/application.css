@@ -53,5 +53,9 @@
  #sticky-footer {
    flex-shrink: none;
  }
+
+ a {
+   text-decoration: none;
+ }
  
 
