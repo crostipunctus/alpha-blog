@@ -6,6 +6,7 @@
             <div class="card text-center shadow mb-5 bg-white rounded">
               <div class="card-header">
                 by <%= @article.user.username %>
+                <%= link_to gravatar_for(@article.user, size: 150), user_path(@article.user) %>
               </div>
               <div class="card-body">
                 <h5 class="card-title text-left text-success"><%=  @article.title %></h5>

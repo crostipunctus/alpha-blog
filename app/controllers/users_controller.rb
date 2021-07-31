@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 
     if @user.save 
       flash[:notice] = "#{@user.username}, you have succesfully signed up!"
-      redirect_to articles_path
+      redirect_to @user
     else
       render :new
     end
@@ -33,7 +33,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     if @user.update(user_params)
-      redirect_to articles_path
+      redirect_to @user
       flash[:notice] = "Updated succesfully"
     else
       render :edit
