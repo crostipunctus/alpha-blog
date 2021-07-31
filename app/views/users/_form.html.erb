@@ -25,7 +25,7 @@
        
         
         <div class="form-group row mt-4 justify-content-center">
-          <%= form.submit "Sign up", class: "btn btn-outline-light" %>
+          <%= form.submit(@user.new_record? ? "Sign up" : "Update", class: "btn btn-outline-light" )%>
         </div> 
       <% end %>
       
