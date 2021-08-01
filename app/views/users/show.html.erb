@@ -1,6 +1,10 @@
 
 <h1 class="text-center mt-4"><%= @user.username %>'s Profile</h1>
 
+ <div class="flickr_pagination mb-4">
+    <%= will_paginate @articles, :container => false %>
+  </div>
+
 <%= gravatar_for @user, size: 200 %>
 
 <div class="text-center mt-4">
@@ -10,3 +14,7 @@
 <h3 class="text-center mt-4">User's Articles</h1>
 
 <%= render 'articles/article' %>
+
+ <div class="flickr_pagination mb-4">
+    <%= will_paginate @articles, :container => false %>
+  </div>
